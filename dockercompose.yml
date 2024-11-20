@@ -3,11 +3,11 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./backend
+      context: ./ReservationVol
     ports:
       - "8080:8080"
     volumes:
-      - ./backend:/app  # Synchronisation des fichiers backend
+      - ./ReservationVol:/app  # Synchronisation des fichiers backend
 
   frontend:
     build:
